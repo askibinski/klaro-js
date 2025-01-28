@@ -170,25 +170,14 @@ export default class ConsentNotice extends React.Component {
         );
 
         const learnMoreLink = () =>
-            noticeAsModal ? (
-                <button
-                    key="learnMoreLink"
-                    className="cm-btn cm-btn-lern-more cm-btn-info"
-                    type="button"
-                    onClick={showModal}
-                >
-                    {t(['consentNotice', 'learnMore'])}
-                </button>
-            ) : (
-                <a
-                    key="learnMoreLink"
-                    className="cm-link cn-learn-more"
-                    href="#"
-                    onClick={showModal}
-                >
-                    {t(['consentNotice', 'learnMore'])}
-                </a>
-            );
+            <a
+                key="learnMoreLink"
+                className="cm-link cn-learn-more"
+                href="#"
+                onClick={showModal}
+            >
+                {t(['consentNotice', 'learnMore'])}
+            </a>
 
         let ppLink;
 
